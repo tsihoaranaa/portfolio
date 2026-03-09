@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Tsihoarana | Portfolio</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">A<span>.</span>T</a>
+            <div class="nav-links">
+                <a href="#about"><span class="fr">À propos</span><span class="en">About</span></a>
+                <a href="#experience"><span class="fr">Expériences</span><span class="en">Experience</span></a>
+                <a href="#education"><span class="fr">Formation</span><span class="en">Education</span></a>
+                <a href="#skills"><span class="fr">Compétences</span><span class="en">Skills</span></a>
+            </div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <select id="lang-toggle" aria-label="Toggle Language"
+                    style="background: transparent; color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 5px; padding: 0.3rem; font-family: inherit; font-size: 0.9rem; cursor: pointer; outline: none;">
+                    <option value="fr" style="background: var(--bg-secondary); color: var(--text-primary);">FR</option>
+                    <option value="en" style="background: var(--bg-secondary); color: var(--text-primary);">EN</option>
+                </select>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-moon">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-sun" style="display:none;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content fade-in">
+                <h2 class="subtitle">
+                    <span class="fr">Étudiant en Informatique | Recherche d'Alternance</span>
+                    <span class="en">Computer Science Student | Seeking Apprenticeship</span>
+                </h2>
+                <h1 class="title">Aaron Tsihoarana<br /><span class="gradient-text">Raonimanana</span></h1>
+                <p class="description">
+                    <span class="fr">Étudiant en 2e année de cycle préparatoire à Polytech Lyon. À l'écoute
+                        d'opportunités pour une alternance en ingénierie informatique pour Septembre 2026.</span>
+                    <span class="en">2nd-year preparatory cycle student at Polytech Lyon. Looking for an apprenticeship
+                        in computer engineering for September 2026.</span>
+                </p>
+                <div class="cta-group">
+                    <a href="#about" class="btn btn-primary"><span class="fr">En savoir plus</span><span
+                            class="en">Learn more</span></a>
+                    <a href="mailto:aarontsihoarana@gmail.com" class="btn btn-secondary"><span class="fr">Me
+                            contacter</span><span class="en">Contact me</span></a>
+                </div>
+            </div>
+            <!-- Background Decoration -->
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-container fade-in-up">
+                <h2 class="section-title"><span class="fr">À propos de moi</span><span class="en">About me</span></h2>
+                <div class="glass-card full-width">
+                    <p>
+                        <span class="fr">Doté d'une base solide en mathématiques, informatique et sciences de la
+                            matière, je souhaite développer mes compétences techniques au sein d'un environnement
+                            professionnel. Sérieux, rigoureux et autonome, je possède également une bonne capacité
+                            d'adaptation et un bon sens relationnel.</span>
+                        <span class="en">With a solid foundation in mathematics, computer science, and materials
+                            science, I wish to develop my technical skills in a professional environment. Serious,
+                            rigorous, and autonomous, I also have good adaptability and interpersonal skills.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-section">
+            <div class="section-container fade-in-up">
+                <h2 class="section-title"><span class="fr">Expériences Professionnelles</span><span class="en">Work
+                        Experience</span></h2>
+                <div class="timeline">
+                    <!-- Exp 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date"><span class="fr">Mai - Juin 2025</span><span class="en">May -
+                                    June 2025</span></span>
+                            <h3><span class="fr">Hôte d'Accueil pour Roland Garros Edition 2025</span><span
+                                    class="en">Host for Roland Garros 2025 Edition</span></h3>
+                            <span class="company"><span class="fr">Agence Hôtesses MAHOLA (Paris, France)</span><span
+                                    class="en">MAHOLA Hostess Agency (Paris, France)</span></span>
+                            <ul class="achievements-list">
+                                <li><span class="fr">Accueil et orientation des visiteurs, gestion des flux et
+                                        information du public</span><span class="en">Welcome and orientation of
+                                        visitors, flow management and public information</span></li>
+                                <li><span class="fr">Assistance aux services VIP et contribution au bon déroulement des
+                                        opérations sur site</span><span class="en">Assistance to VIP services and
+                                        contribution to smooth on-site operations</span></li>
+                                <li><span class="fr">Représentation de l'agence et du tournoi avec professionnalisme et
+                                        sens du service client</span><span class="en">Representation of the agency and
+                                        the tournament with professionalism and a sense of customer service</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Exp 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date"><span class="fr">Mai - Août 2023</span><span class="en">May -
+                                    August 2023</span></span>
+                            <h3><span class="fr">Employé polyvalent</span><span class="en">Versatile employee</span>
+                            </h3>
+                            <span class="company"><span class="fr">Garage David ARTELEC (Tananarive,
+                                    Madagascar)</span><span class="en">Garage David ARTELEC (Antananarivo,
+                                    Madagascar)</span></span>
+                            <ul class="achievements-list">
+                                <li><span class="fr">Accueil et information de la clientèle sur les services et les
+                                        réparations</span><span class="en">Customer greeting and information on services
+                                        and repairs</span></li>
+                                <li><span class="fr">Gestion de la caisse, des transactions quotidiennes, et de
+                                        l'approvisionnement en outils</span><span class="en">Cash register management,
+                                        daily transactions, and tool supply</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Exp 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date"><span class="fr">Mars 2022</span><span class="en">March
+                                    2022</span></span>
+                            <h3><span class="fr">Stage d'Observation</span><span class="en">Observation
+                                    Internship</span></h3>
+                            <span class="company"><span class="fr">Sky Services (Tananarive, Madagascar)</span><span
+                                    class="en">Sky Services (Antananarivo, Madagascar)</span></span>
+                            <ul class="achievements-list">
+                                <li><span class="fr">Observation du métier de pilote et du monde de l'aéronautique,
+                                        formation acquise en sûreté</span><span class="en">Observation of the pilot
+                                        profession and the aviation world, security training acquired</span></li>
+                                <li><span class="fr">Analyse de plan de vol en fonction des conditions météorologiques
+                                        et participation dans la préparation d'un vol local</span><span
+                                        class="en">Flight plan analysis based on weather conditions and participation in
+                                        the preparation of a local flight</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="content-section">
+            <div class="section-container fade-in-up">
+                <h2 class="section-title"><span class="fr">Éducation & Palmarès</span><span class="en">Education &
+                        Achievements</span></h2>
+                <div class="cards-grid">
+                    <!-- Edu 1 -->
+                    <div class="glass-card full-width">
+                        <div class="card-header">
+                            <span class="timeline-date"><span class="fr">2024 - Actuellement</span><span class="en">2024
+                                    - Present</span></span>
+                            <h3>Polytech Lyon</h3>
+                            <span class="company">Université Claude Bernard Lyon 1</span>
+                        </div>
+                        <p>
+                            <span class="fr">Suivi d'un cursus préparatoire (type classe préparatoire intégré) en
+                                mathématiques, sciences de la matière et informatique (algorithmique et structures de
+                                données, réseau et web).</span>
+                            <span class="en">Preparatory course (integrated preparatory class type) in mathematics,
+                                materials science, and computer science (algorithms and data structures, network and
+                                web).</span>
+                        </p>
+                    </div>
+
+                    <!-- Edu 2 -->
+                    <div class="glass-card full-width">
+                        <div class="card-header">
+                            <span class="timeline-date">2017 - 2024</span>
+                            <h3>Alliance Française Antsahabe</h3>
+                            <span class="company"><span class="fr">Tananarive, Madagascar</span><span
+                                    class="en">Antananarivo, Madagascar</span></span>
+                        </div>
+                        <ul class="achievements-list">
+                            <li><span class="fr"><strong>Baccalauréat général</strong>, spécialités Mathématiques et
+                                    Physique-Chimie – Mention Très Bien (Session 2024)</span><span
+                                    class="en"><strong>General Baccalaureate</strong>, Mathematics and Physics-Chemistry
+                                    specialties - Highest Honors (2024 Session)</span></li>
+                            <li><span class="fr"><strong>Diplôme National du Brevet</strong> – Mention Très Bien
+                                    (Session 2021)</span><span class="en"><strong>National Diploma (Brevet)</strong> -
+                                    Highest Honors (2021 Session)</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Academic Achievements -->
+                    <div class="glass-card full-width">
+                        <div class="card-header">
+                            <h3><span class="fr">Palmarès Académique</span><span class="en">Academic Achievements</span>
+                            </h3>
+                        </div>
+                        <ul class="achievements-list">
+                            <li><span class="fr">Finaliste des <strong>Olympiades de Mathématiques</strong> 2023
+                                    (Individuel et Groupe)</span><span class="en">Finalist in the 2023 <strong>Math
+                                        Olympiads</strong> (Individual and Group)</span></li>
+                            <li><span class="fr">Finaliste du <strong>Rallye Mathématique</strong> 2023</span><span
+                                    class="en">Finalist in the 2023 <strong>Math Rally</strong></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section Placeholder -->
+        <section id="skills" class="content-section">
+            <div class="section-container fade-in-up">
+                <h2 class="section-title"><span class="fr">Compétences Techniques</span><span class="en">Technical
+                        Skills</span></h2>
+                <div class="cards-grid">
+                    <div class="glass-card">
+                        <h3><span class="fr">Langues</span><span class="en">Languages</span></h3>
+                        <div class="skills-grid" style="margin-top: 1rem;">
+                            <span class="skill-tag"><span class="fr">Français (Natif)</span><span class="en">French
+                                    (Native)</span></span>
+                            <span class="skill-tag"><span class="fr">Malgache (Maternelle)</span><span
+                                    class="en">Malagasy (Native)</span></span>
+                            <span class="skill-tag"><span class="fr">Anglais (C1)</span><span class="en">English
+                                    (C1)</span></span>
+                            <span class="skill-tag"><span class="fr">Espagnol (B1)</span><span class="en">Spanish
+                                    (B1)</span></span>
+                        </div>
+                    </div>
+                    <div class="glass-card">
+                        <h3><span class="fr">Programmation</span><span class="en">Programming</span></h3>
+                        <div class="skills-grid" style="margin-top: 1rem;">
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="glass-card">
+                        <h3><span class="fr">Logiciels & Outils</span><span class="en">Software & Tools</span></h3>
+                        <div class="skills-grid" style="margin-top: 1rem;">
+                            <span class="skill-tag">Suite Microsoft Office</span>
+                            <span class="skill-tag">Canva</span>
+                            <span class="skill-tag">Capcut</span>
+                            <span class="skill-tag">GarageBand</span>
+                        </div>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Soft Skills</h3>
+                        <div class="skills-grid" style="margin-top: 1rem;">
+                            <span class="skill-tag"><span class="fr">Sens du service client</span><span
+                                    class="en">Customer Service Sense</span></span>
+                            <span class="skill-tag"><span class="fr">Gestion des flux</span><span class="en">Flow
+                                    Management</span></span>
+                            <span class="skill-tag"><span class="fr">Réactivité</span><span
+                                    class="en">Responsiveness</span></span>
+                            <span class="skill-tag"><span class="fr">Travail d'équipe</span><span
+                                    class="en">Teamwork</span></span>
+                            <span class="skill-tag"><span class="fr">Adaptabilité</span><span
+                                    class="en">Adaptability</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Interests Section -->
+        <section id="projects-interests" class="content-section" style="margin-top: 4rem;">
+            <div class="section-container fade-in-up">
+                <h2 class="section-title"><span class="fr">Projets & Créations</span><span class="en">Projects &
+                        Creations</span></h2>
+
+                <div class="projects-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+
+                    <!-- F1 Predict App Project -->
+                    <div class="project-card glass-card"
+                        style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                        <a href="https://f1pred-54v0.onrender.com/" target="_blank" rel="noopener noreferrer"
+                            style="display: block; overflow: hidden; height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1532822766336-d84878a8be6b?q=80&w=2938&auto=format&fit=crop"
+                                alt="F1 Predict App Preview"
+                                style="width: 100%; height: 100%; object-fit: cover; background: #000; transition: transform 0.3s ease;"
+                                class="project-img-hover">
+                            <!-- F1 Logo -->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" alt="F1 Logo"
+                                style="position: absolute; top: 15px; right: 15px; width: 40px; height: auto; z-index: 5;">
+                        </a>
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="margin-top: 0; margin-bottom: 0.5rem;">F1 Predict App</h3>
+                            <p
+                                style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem; flex-grow: 1;">
+                                <span class="fr">Une application web en Python et SQL utilisant le Machine Learning pour
+                                    prédire les résultats des courses de Formule 1.</span><span class="en">A web
+                                    application in Python and SQL using Machine Learning to predict Formula 1 race
+                                    results.</span>
+                            </p>
+                            <div class="skills-grid" style="margin-bottom: 1rem;">
+                                <span class="skill-tag"
+                                    style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Python</span>
+                                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">SQL</span>
+                                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Machine
+                                    Learning</span>
+                            </div>
+                            <a href="https://f1pred-54v0.onrender.com/" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-secondary"
+                                style="text-align: center; padding: 0.5rem; font-size: 0.9rem;"><span class="fr">Voir
+                                    l'application</span><span class="en">View App</span> <span
+                                    style="margin-left: 5px;">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Content Creation Carousel -->
+                    <div class="project-card glass-card"
+                        style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                        <div class="carousel-container" style="position: relative; height: 200px; overflow: hidden;">
+                            <div class="carousel-track"
+                                style="display: flex; height: 100%; transition: transform 0.5s ease; width: 300%;">
+                                <img src="IMG/Design sans titre (3).png" alt="Brochure"
+                                    style="width: 33.33%; height: 100%; object-fit: contain; background: rgba(0,0,0,0.2); flex-shrink: 0;">
+                                <img src="IMG/Tsy Hay Hadinoina.png" alt="Couverture d'album"
+                                    style="width: 33.33%; height: 100%; object-fit: contain; background: rgba(0,0,0,0.2); flex-shrink: 0;">
+                                <img src="IMG/1.png" alt="Affiche"
+                                    style="width: 33.33%; height: 100%; object-fit: contain; background: rgba(0,0,0,0.2); flex-shrink: 0;">
+                            </div>
+                            <div class="carousel-indicators"
+                                style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px;">
+                                <div class="indicator active"
+                                    style="width: 8px; height: 8px; border-radius: 50%; background: white; cursor: pointer;">
+                                </div>
+                                <div class="indicator"
+                                    style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer;">
+                                </div>
+                                <div class="indicator"
+                                    style="width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer;">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="margin-top: 0; margin-bottom: 0.5rem;"><span class="fr">Création de
+                                    contenu</span><span class="en">Content Creation</span></h3>
+                            <p style="font-size: 0.9rem; color: var(--text-color); opacity: 0.8; margin-bottom: 1rem;">
+                                <span class="fr">Réalisation de visuels, courts-métrages et vidéos pour des projets
+                                    personnels, professionnels et académiques.</span><span class="en">Creation of
+                                    visuals, short films and videos for personal, professional and academic
+                                    projects.</span>
+                            </p>
+                            <div class="skills-grid" style="margin-top: auto;">
+                                <span class="skill-tag"
+                                    style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Design</span>
+                                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;"><span
+                                        class="fr">Montage</span><span class="en">Video Editing</span></span>
+                                <span class="skill-tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;"><span
+                                        class="fr">Direction Artistique</span><span class="en">Art
+                                        Direction</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title"><span class="fr">Centres d'Intérêt</span><span class="en">Interests</span>
+                </h2>
+                <div class="cards-grid">
+                    <div class="glass-card full-width">
+                        <ul class="achievements-list">
+                            <li><strong><span class="fr">Sport :</span><span class="en">Sport:</span></strong> <span
+                                    class="fr">Tennis (Top 100 U14 Afrique en 2019-2020), Football (Champion
+                                    inter-établissement au lycée).</span><span class="en">Tennis (Top 100 U14 Africa in
+                                    2019-2020), Football (Inter-school champion).</span></li>
+                            <li><strong><span class="fr">Culturel :</span><span class="en">Culture:</span></strong>
+                                <span class="fr">Musique (Piano, Guitare, Production musicale), Artiste indépendant,
+                                    Amateur de Photographie.</span><span class="en">Music (Piano, Guitar, Music
+                                    Production), Independent Artist, Photography Enthusiast.</span></li>
+                            <li><strong><span class="fr">Associatif :</span><span class="en">Community:</span></strong>
+                                <span class="fr">Trésorier de la Section des Jeunes (STK) de la Paroisse FPMA Lyon,
+                                    Organisateur d'évènements.</span><span class="en">Treasurer of the Youth Section
+                                    (STK) of FPMA Lyon Parish, Event Organizer.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Aaron Tsihoarana Raonimanana. <span class="fr">Tous droits réservés.</span><span
+                    class="en">All rights reserved.</span></p>
+            <div class="footer-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
